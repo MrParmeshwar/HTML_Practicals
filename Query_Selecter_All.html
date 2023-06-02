@@ -1,0 +1,44 @@
+<!-- How can we use the querySelectorAll() method to select and modify multiple elements in HTML using JavaScript? -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function art() {
+            let arr = document.querySelectorAll('p')
+            for (let i = 0; i < arr.length; i++) {
+                let ob = arr[i];
+                ob.style.backgroundColor = "yellow"
+                ob.style.color="Darkred"
+            }
+        }
+        //Below is the code of querySelector
+        /*function change()
+        {
+            let ob=document.querySelector('p')
+            ob.style.backgroundColor="yellow"
+        }*/
+    </script>
+</head>
+
+<body>
+
+    <p>
+        The querySelector() is a method used for searching and returning the very
+         first element within the document that matches the given selector. 
+    </p>
+    <br>
+    <br>
+    <div>
+        This is Div Tag.
+
+    </div>
+    <br>
+    <br>
+    <p>
+        The queryselector in javascript only returns the element that matches with 
+        one of the specified CSS selectors, or a group of selectors.
+    </p>
+    <input type="button" value="click here" onclick="art()">
+</body>
+
+</html>

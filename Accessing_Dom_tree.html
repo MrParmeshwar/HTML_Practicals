@@ -1,0 +1,25 @@
+<!-- How can I access the DOM tree using JavaScript? -->
+<!--We Can Access Dom Tree By Following Code-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function show(){
+                for (let i=0;i<document.body.childNodes.length;i++)
+                {
+                alert(document.body.childNodes[i])
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div>
+            <p>
+                Hello I AM Rocky,<br>
+                Click On The Below Button To See Dom Tree Element
+            </p>
+        </div>
+        <input type="button" value="Click Here" onclick="show()">
+    </body>
+</html>

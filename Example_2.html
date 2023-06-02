@@ -1,0 +1,36 @@
+<!-- How can I access and manipulate the child elements of a specific HTML element using JavaScript? -->
+<!DOCTYPE html>
+<hmtl>
+    <body>
+        <div id="d1">
+            <input type="button" value="Click here" id="b1" onclick="Hello()">
+            <br>
+            Hello User.!<Br>
+                When You Click On Button Then Go To Developer Option And See The Result in Console Tab.
+            
+            <br>
+        </div>
+        <div id="d2">
+           
+            This is Content Of Div Tag.
+
+        </div>
+        <script> 
+        function Hello()
+        {
+        let ob=document.getElementById('d1');
+        let size=ob.children.length
+        for(i=0;i<size;i++)
+        {
+            console.log(ob.children[i]);
+        }
+       
+        console.log (ob.firstChild)
+        console.log (ob.lastChild)
+        console.log (ob.nextsibling)
+        console.log (ob.previoussibling)
+        console.log (ob.nextElementSibling)
+       }
+        </script>
+    </body>
+</hmtl>

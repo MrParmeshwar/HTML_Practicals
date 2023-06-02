@@ -1,0 +1,56 @@
+<!-- How can we dynamically create a table and add rows with data using JavaScript in HTML? -->
+<!--Lets Create Table Dynamcally-->
+<html>
+
+<head>
+    <script>
+        function create() {
+            //obtain textbox from html
+            let ob1 = document.getElementById('t1')
+            let ob2 = document.getElementById('t2')
+            let ob3 = document.getElementById('t3')
+            let a = ob1.value
+            let b = ob2.value
+            let c = ob3.value
+            //obtain table 1
+            let mytable = document.getElementById('table1')
+            //Lets crete row 
+            let row = document.createElement('tr')
+            let c1 = document.createElement('td')
+            let c2 = document.createElement('td')
+            let c3 = document.createElement('td')
+            c1.innerText = a
+            c2.innerText = b
+            c3.innerText = c
+            //Lets Add Column  to row 
+            row.append(c1)
+            row.append(c2)
+            row.append(c3)
+            //Lets Add Row To Table 
+            mytable.append(row)
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <lable>Id</lable>
+    <input type="text" id="t1" value="">
+    <br>
+    <label>Name</label>
+    <input type="text" id="t2" value="">
+    <br>
+    <lable>Address</lable>
+    <input type="text" id="t3" value="">
+    <br>
+    <br>
+    <input type="Button" value="Create_Teble" onclick="create()">
+    <table border="5" id="table1">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Address</th>
+    </table>
+</body>
+
+</html>

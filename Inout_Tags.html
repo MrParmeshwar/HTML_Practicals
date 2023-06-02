@@ -1,0 +1,41 @@
+<!-- How can we use input tags to create a form with different input fields and a button? -->
+<!--Write An Html Code Using Input Tags -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function A()
+        {
+            alert('This is a Demo Of Button ')
+        }
+        
+    </script>
+    <title>Input Tags</title>
+</head>
+<body>
+    <form action="http://google.com">
+        <br>
+        <lable>Stu.Name:</lable>
+        <input type="text" id="t1" name="Fname" required>
+        <br>
+        <br>
+        <label>PassWord:</label>
+        <input type="password" name="Password">
+        <br>
+        <br>
+        <label>E_mail-id:</label>
+        <input type="email" name="E-Mail">
+        <br>
+        <br>
+        <label>Here You Can Upload A File Here</label>
+        <br>
+        <input type="file" name="Upload File You Have">
+        <br>
+        <br>
+        <label>You Can alert a message by using This button👇</label>
+        <br>
+        <input type="button" value="Click" onclick="A()"><br>
+
+    </form>
+</body>
+</html>

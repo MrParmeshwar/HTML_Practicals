@@ -1,0 +1,32 @@
+<!-- How can we dynamically create and append paragraphs to a specific HTML element using JavaScript? -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function create()
+            {
+                let ob=document.getElementById('d1')
+                //Lets Create First Paragraph
+                let p1=document.createElement('p')
+                let p2=document.createElement('p')
+                let p3=document.createElement('p')
+                let p4=document.createElement('p')
+                p1.innerText="This Is Result Of 1st Function"
+                p2.innerText="This is Result Of 2nd Function"
+                p3.innerText="This is Result Of 3rd Function"
+                p4.innerText="This is Result Of 4th Function"
+                ob.append(p1)
+                ob.append(p2)
+                ob.append(p3)
+                ob.append(p4)
+              
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1">
+        
+        </div>
+        <input type="button" value="See All Function" onclick="create()">
+    </body>
+</html>

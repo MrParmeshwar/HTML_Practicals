@@ -1,0 +1,41 @@
+<!-- How can we create a grid view using HTML and CSS? -->
+<!-- Write a HTML Code For Grid View -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Of Grid View</title>
+        <style>
+            body {
+                margin: 40px;
+            }
+            .wrapper{
+                display: grid;
+                /* 👇 This is indacating That How Many Columns We Want To Create */
+                grid-template-columns: 100px 100px;
+                /* 👇 This will change the gap between two boxes */
+                grid-gap:100px;
+                background-color: #fff;
+                color: #444;
+            }
+            .box{
+                background-color: #444;
+                color: #fff;
+                /* 👇 This will Change The Shape of corner */
+                border-radius: 100px; /* You Can Change Border Radius If You Want To Change */
+                padding: 20px;
+                /* This Will Change The Size of Text */
+                font-size: 50; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+            <div class="box">E</div>
+            <div class="box">F</div>
+        </div>
+    </body>
+</html>

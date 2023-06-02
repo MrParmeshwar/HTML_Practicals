@@ -1,0 +1,36 @@
+<!-- How can we use the querySelector() method to select and modify the first element that matches a CSS selector in HTML using JavaScript? -->
+<!--This is a First Example Of Querhy Selecter-->
+<html>
+
+<head>
+    <script>
+        function change() {
+            let ob = document.querySelector('p')
+            ob.style.backgroundColor = "red"
+            let ob1 = document.querySelector('p')
+            ob.style.color = "Yellow"
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        The querySelector() is a method used for searching and returning the
+        very first element within the document that matches the given selector.
+    </p>
+    <br>
+    <br>
+    <p>
+
+        The queryselector in javascript only returns the element that matches with
+        one of the specified CSS selectors, or a group of selectors.
+    </p>
+    <br>
+    <br>
+    <br>
+    <input type="Button" value="Click me" onclick="change()">
+    <!--The Button Print Page is just a timepass this not a part of this program-->
+    <input type="button" value="Print page" onclick="print()">
+</body>
+
+</html>

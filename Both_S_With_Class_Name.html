@@ -1,0 +1,49 @@
+<!-- How can I change the background color and text color of specific elements using JavaScript? -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .c1{
+            background-color: rgb(228, 64, 64);
+        }
+        .c2{
+           background-color: rgb(41, 202, 41);
+        }
+            
+        </style>
+        <script>
+            function print()
+            {   
+                
+                let arr=document.querySelectorAll('.c1')
+                for(let i=0;i<arr.length;i++)
+                {
+                    let ob=arr[i];
+                ob.style.backgroundColor="cyan"
+                ob.style.color="Darkred"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p class='c1'>
+            A paragraph is defined as “a group of sentences or a single sentence that forms a unit”
+             (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper 
+             is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.
+        </p>
+        <br>
+        <br>
+        <div class='c2'>
+            This is div Tag
+            </div>
+            <br>
+            <br>
+            <p class='c1'>
+                A paragraph is defined as “a group of sentences or a single sentence that forms a unit”
+             (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper 
+             is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.
+       
+            </p>
+            <input type="Button" Value="Click Me" onclick="print()">
+    </body>
+</html>

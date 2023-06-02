@@ -1,0 +1,28 @@
+<!-- How can we use the getElementById() method to access and manipulate elements in the DOM tree using JavaScript? -->
+<!-- This is An examle of get element by id for DOM Tree -->
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="d1">
+        <input type="button"  value="click here" onclick="alert(document.showcookies)">
+        <br>
+        <br>
+        <div id="d2">
+            <input type="text" id="f1">
+        <br>
+
+        </div>
+        <script>
+           let ob=document.getElementById('d1')
+            let size=ob.childNodes.length
+            for(let i=0;i<size;i++)
+            {
+            console.log(ob.childNodes[i]);
+            }
+
+        </script>
+    </body>
+</html>

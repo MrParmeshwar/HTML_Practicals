@@ -1,0 +1,23 @@
+<!-- How can we dynamically generate radio buttons using JavaScript in HTML? -->
+<!--Generate The RAdio Button Dynamically-->
+<html>
+    <head>
+        <script>
+            function Radio(){
+               let ob=document.createElement('input')
+               ob.setAttribute("type","radio")
+               ob.setAttribute("value","Male")
+               let ob1=document.createElement('lable')
+                let R=document.createElement('br')
+               ob1.innerText="Male"
+               document.body.append(R)
+               document.body.append(ob)
+               document.body.append(ob1)
+            }
+        
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Generate Radio Button" onclick="Radio()">
+    </body>
+</html>
